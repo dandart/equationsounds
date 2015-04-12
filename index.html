@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<h1>Equation Sounds</h1>
+<h2>Enter an equation into the box and press Go, the program will plot and play.</h2>
+<h3>Examples of equations are below.</h3>
+<input type="text" id="box" style="width:600px" value="Math.sin(x / 20)"/><input type="submit" value="go" onclick="go()"/>
+<br/>
+<input type="button" value="sin" onclick="set('Math.sin(x/20)'); go()"/>
+<input type="button" value="2 sin" onclick="set('0.5*Math.sin(x/20)+0.5*Math.sin(x/40)'); go()"/>
+<input type="button" value="3 sin" onclick="set('0.3*Math.sin(x/20)+0.3*Math.sin(x/40)+0.3*Math.sin(x/10)'); go()"/>
+<input type="button" value="4 sin" onclick="set('0.25*Math.sin(x/20)+0.25*Math.sin(x/40)+0.25*Math.sin(x/10)+0.25*Math.sin(x/30)'); go()"/>
+<br/>
+<canvas id="canvas" width="1200" height="600" style="width:1200px;height:600px; border: 1px solid black; margin: 10px"></canvas>
+<script src="index.js"></script>
+</html>
